@@ -139,7 +139,7 @@ def monitor_rtsp_stream(rtsp_url, interval, timeout, image_enabled):
 
             last_uri_status = uri_status
             last_stream_status = stream_status
-
+            
             if print_counter % 5 == 0:
                 logger.info(f"[Status] - Current Status: URI {'Connected' if uri_status else 'Disconnected'}, "
                             f"Stream {'Active' if stream_status else 'Inactive'}")

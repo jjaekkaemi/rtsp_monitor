@@ -72,12 +72,6 @@ rtsp_monitor.exe rtsp://example.com:554/stream
 rtsp_monitor.exe rtsp://example.com:554/stream --interval 2 --timeout 10 --image 0
 ```
 
-macOS/Linux:
-
-```
-
-```
-
 ## 로그 출력 예시
 
 ```
