@@ -121,6 +121,7 @@ macOS/Linux:
 - `[Stream Faile]` - RTSP 스트림 연결 실패 시
 - `[Status]` - 현재 프로그램이 제대로 동작하는 지 찍는 로그
 - `[Time]` - 네트워크 및 스트림 연결 전환(실패->성공)시 시간 간격(초)
+- `[Image Saved]` - 이미지 저장 시
 
 ## 백그라운드 환경 실행
 
@@ -143,11 +144,11 @@ set "DOCS_PATH=%USERPROFILE%\Documents"
 cd /d "%DOCS_PATH%"
 
 REM 새로운 프로세스 실행
-start rtsp_monitor.exe "[rtsp_url]" --interval 1 --timeout 5
+start rtsp_monitor.exe "[rtsp_url]"
 
 ```
 
-- 위 코드를 복사한 후, `[rtsp_url]` 안에 모니터링할 url 넣어준 다음, .bat으로 파일 생성
+- 위 코드를 복사한 후, `[rtsp_url]` 안에 모니터링할 url 넣어주고 원하는 interval/timeout/image저장 옵션을 입력한 후, bat으로 파일 생성
 
 ### 배치 파일을 윈도우 시작 프로그램에 등록
 
@@ -161,6 +162,7 @@ start rtsp_monitor.exe "[rtsp_url]" --interval 1 --timeout 5
 
 - 작업관리자에서 해당 프로그램 실행하는 지 체크
 - 문서 폴더 안에 log/rtsp_monitor.log 쌓이는 지 체크
+- 로그는 하루 씩 저장/7일 제한
 
 ---
 
