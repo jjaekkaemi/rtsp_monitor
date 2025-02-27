@@ -66,7 +66,7 @@ Windows:
 
 ```
 # 기본 설정으로 실행
-rtsp_monitor.exe rtsp://example.com:554/stream --image 0
+rtsp_monitor.exe rtsp://example.com:554/stream
 
 # 사용자 지정 간격과 타임아웃으로 실행
 rtsp_monitor.exe rtsp://example.com:554/stream --interval 2 --timeout 10 --image 0
