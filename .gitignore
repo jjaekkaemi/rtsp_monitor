@@ -1,0 +1,40 @@
+# Build and distribution
+build/
+dist/
+__pycache__/
+
+# Python compiled files
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.spec
+*.so
+*.dll
+*.lib
+*.exp
+*.def
+*.manifest
+
+# Project specific directories
+copy/
+temp/
+log/
+venv/
+venv_rtsp_monitor/
+
+# Log files
+*.log
+*.log.*
+
+# Binary files
+*.exe
+*.dll
+*.lib
+*.exp
+*.def
+*.manifest
+
+image/
