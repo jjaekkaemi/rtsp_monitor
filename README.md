@@ -58,6 +58,7 @@ macOS/Linux:
 - rtsp_url: 모니터링할 RTSP 스트림 URL (필수)
 - --interval: 모니터링 간격 (초 단위, 기본값: 1)
 - --timeout: 연결 타임아웃 (초 단위, 기본값: 5)
+- --image: 이미지 저장 여부 (0 - False, 1 - True, default: 1)
 
 ### 사용 예시
 
@@ -65,10 +66,10 @@ Windows:
 
 ```
 # 기본 설정으로 실행
-rtsp_monitor.exe rtsp://example.com:554/stream
+rtsp_monitor.exe rtsp://example.com:554/stream --image 0
 
 # 사용자 지정 간격과 타임아웃으로 실행
-rtsp_monitor.exe rtsp://example.com:554/stream --interval 2 --timeout 10
+rtsp_monitor.exe rtsp://example.com:554/stream --interval 2 --timeout 10 --image 0
 ```
 
 macOS/Linux:
