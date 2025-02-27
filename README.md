@@ -21,8 +21,15 @@ pip install -r requirements.txt
 ### 파이썬 실행 방법
 
 ```
-python rtsp_monitor.py [rtsp_url]
+python rtsp_monitor.py [rtsp_url] [--interval 초] [--timeout 초] [--image 0/1]
 ```
+
+### 매개변수
+
+- rtsp_url: 모니터링할 RTSP 스트림 URL (필수)
+- --interval: 모니터링 간격 (초 단위, 기본값: 1)
+- --timeout: 연결 타임아웃 (초 단위, 기본값: 5)
+- --image: 이미지 저장 여부 (0 - False, 1 - True, default: 1)
 
 ## 빌드 방법
 
@@ -44,7 +51,7 @@ pyinstaller --onefile --noconsole rtsp_monitor.py --name rtsp_monitor.exe
 Windows:
 
 ```
-rtsp_monitor.exe [rtsp_url] [--interval 초] [--timeout 초]
+rtsp_monitor.exe [rtsp_url] [--interval 초] [--timeout 초] [--image 0/1]
 ```
 
 macOS/Linux:
@@ -52,13 +59,6 @@ macOS/Linux:
 ```
 
 ```
-
-### 매개변수
-
-- rtsp_url: 모니터링할 RTSP 스트림 URL (필수)
-- --interval: 모니터링 간격 (초 단위, 기본값: 1)
-- --timeout: 연결 타임아웃 (초 단위, 기본값: 5)
-- --image: 이미지 저장 여부 (0 - False, 1 - True, default: 1)
 
 ### 사용 예시
 
